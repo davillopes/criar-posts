@@ -1,0 +1,41 @@
+.card {
+    height: 100%;
+    width: 41%;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-areas: 
+    "img strong"
+    "img strong"
+    "img small";
+    grid-template-columns: 140px 1fr;
+
+    background-color: #2424248f;
+    border: 2px solid #69696993;
+
+}
+
+.card img {
+    grid-area: img;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    margin: 20px 20px;
+}
+
+.card strong {
+    grid-area: strong;
+    font-size: 18px;
+    background-color: #2424248f;
+    padding: 12px; 
+}
+
+.card small {
+    grid-area: small;
+    font-size: 14px;
+    background-color: #2424248f;
+    padding: 12px;
+    text-align: justify;
+}
